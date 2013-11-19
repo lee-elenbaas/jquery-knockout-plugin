@@ -1,0 +1,26 @@
+{
+	"name": "jQuery-Knockout",
+	"title": "jQuery Knockout",
+	"description": "Easy usage of Knockout from jQuery",
+	"keywords": [
+		"knockout"
+	],
+	"version": "0.1.0",
+	"author": {
+		"name": "Lee Elenbaas"
+	},
+	"licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/forwardadvance/svg_alike/blob/master/LICENSE"
+        }
+    ],
+    "bugs": "https://github.com/lee-elenbaas/jquery-knockout-plugin/issues",
+    "homepage": "https://github.com/lee-elenbaas/jquery-knockout-plugin",
+    "docs": "https://github.com/lee-elenbaas/jquery-knockout-plugin/blob/master/README.md",
+    "download": "https://github.com/lee-elenbaas/jquery-knockout-plugin",
+    "dependencies": {
+		"jquery": ">=1.0",
+		"knockout": ">=1.0"
+	}
+}
