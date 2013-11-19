@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery-Knockout Global Sample</title>
+		<script src="http://code.jquery.com/jquery-2.0.3.min.js" type="application/ecmascript"></script>
+		<script src="http://knockoutjs.com/downloads/knockout-3.0.0.js" type="application/ecmascript"></script>
+		<script src="../src/jquery-knockout-plugin.js" type="application/ecmascript"></script>
+	</head>
+	<body>
+		<h1>jQuery-Knockout Global Sample</h1>
+		<p>This sample show how the plugin helps use <a href="http://knockoutjs.com">KnockoutJS</a> from <a href="http://jquery.com/">jQuery</a> using the <a href="https://github.com/lee-elenbaas/jquery-knockout-plugin">jQuery-Knockout</a> plugin</p>
+		<p>This is a Global sample, this means that it uses the global objects exposed by jQuery and Knockout as global objects.</p>
+		<p>In this example a very simple model is instantiated twice, and each instance is bounded to 2 views using the plugin.</p>
+		<h2>Edit views</h2>
+		<div class="model1">
+			<label>Name: <input data-bind="value: name" /></label>
+		</div>
+		<div class="model2">
+			<label>Name: <input data-bind="value: name" /></label>
+		</div>
+		<h2>View only views</h2>
+		<div class="model1">
+			<pre>{
+	name: <b data-bind="text: name"></b>
+}</pre>
+		</div>
+		<div class="model2">
+			<pre>{
+	name: <b data-bind="text: name"></b>
+}</pre>
+		</div>
+		<script type="application/ecmascript">
+			"use strict";
+			
+			function Model(name) {
+				this.name = ko.observable(name);
+			}
+			
+			jQuery('.model1').koApplyBindings(new Model('Lee'));
+			jQuery('.model2').koApplyBindings(new Model('Elenbaas')).css({ background: 'Green' });
+		</script>
+	</body>
+</html>
