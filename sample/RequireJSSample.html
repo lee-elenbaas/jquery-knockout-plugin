@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery-Knockout RequireJS Sample</title>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.9/require.min.js" type="application/ecmascript" data-main="RequireJSSampleConfig"></script>
+	</head>
+	<body>
+		<h1>jQuery-Knockout RequireJS Sample</h1>
+		<p>This sample show how the plugin helps use <a href="http://knockoutjs.com">KnockoutJS</a> from <a href="http://jquery.com/">jQuery</a> using the <a href="https://github.com/lee-elenbaas/jquery-knockout-plugin">jQuery-Knockout</a> plugin</p>
+		<p>This is an AMD sample that uses <a href="http://requirejs.org/">RequireJS</a> as its load library. This means that this sample has its code broken down into 3 files:</p>
+		<ul>
+			<li><a href="RequireJSSampleConfig.js">RequireJSSampleConfig.js</a> - A configuration file linked to from the HTML as the startup JavaScript that will be loaded by RequireJS. This file only config RequireJS and loads the application file.</li>
+			<li><a href="RequireJSSampleApp.js">RequireJSSampleApp.js</a> - The application file that uses the jQuery-Knockout plugin to bind the viewmodel to the HTML elements. This file is dependant on jQuery, the jQuery-Knockout-plugin and on the model file.</li>
+			<li><a href="RequireJSSampleModel.js">RequireJSSampleModel.js</a> - The model file that define the KnockoutJS view model that will be used in this sample (Very simple model). This file only depends on KnockoutJS.</li>
+		</ul>
+		<p>Note that the dependancy of the plugin in jQuery and Knockout is dealt within the plugin itself.</p>
+		<h2>Edit views</h2>
+		<div class="model1">
+			<label>Name: <input data-bind="value: name" /></label>
+		</div>
+		<div class="model2">
+			<label>Name: <input data-bind="value: name" /></label>
+		</div>
+		<h2>View only views</h2>
+		<div class="model1">
+			<pre>{
+	name: <b data-bind="text: name"></b>
+}</pre>
+		</div>
+		<div class="model2">
+			<pre>{
+	name: <b data-bind="text: name"></b>
+}</pre>
+		</div>
+	</body>
+</html>
