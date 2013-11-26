@@ -1,11 +1,11 @@
 {
 	"name": "jQuery-Knockout",
 	"title": "jQuery Knockout",
-	"description": "Easy usage of Knockout from jQuery",
+	"description": "Easy usage of Knockout from jQuery (Supports AMD loading)",
 	"keywords": [
-		"knockout"
+		"knockout", "amd"
 	],
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"author": {
 		"name": "Lee Elenbaas"
 	},
