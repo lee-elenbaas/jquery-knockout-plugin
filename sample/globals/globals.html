@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>jQuery-Knockout Global Sample</title>
+		<title>jQuery-Knockout Globals Sample</title>
 		<script src="http://code.jquery.com/jquery-2.0.3.min.js" type="application/ecmascript"></script>
+		<script type="application/ecmascript">window.jQuery || document.write('<script src="../lib/jquery-2.0.3.min.js" type="application/ecmascript"><\/script>')</script>
 		<script src="http://knockoutjs.com/downloads/knockout-3.0.0.js" type="application/ecmascript"></script>
-		<script src="../src/jquery-knockout-plugin.js" type="application/ecmascript"></script>
+		<script type="application/ecmascript">window.ko || document.write('<script src="../lib/knockout-3.0.0.js" type="application/ecmascript"><\/script>')</script>
+		<script src="../../src/jquery-knockout-plugin.js" type="application/ecmascript"></script>
 	</head>
 	<body>
 		<h1>jQuery-Knockout Global Sample</h1>
